@@ -1,0 +1,15 @@
+=== Buoi 1 ===
+* SPA
+* Component
+* Rendering Element {}
+
+=== Buoi 2 ===
+* Handling Events
+    - No Params
+    - Params
+
+* State: Nếu như state thay đổi giá trị => Component chạy lại
+
+* List-key
+
+

@@ -1,0 +1,65 @@
+/* Set the background image */
+.background {
+  background-image: url("/images/background.jpg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333; /* Dark text color for better contrast */
+}
+
+/* Container for overlay content */
+.content-container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Title styling */
+.title {
+  font-family: "Helvetica", sans-serif;
+  color: #444; /* Darker shade for better contrast */
+  font-size: 2.5rem; /* Larger title */
+}
+
+/* Model section */
+.model-container {
+  margin-bottom: 50px;
+}
+
+/* Glasses selection container styling */
+.glasses-selection-container {
+  background-color: white; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Glasses grid selection */
+.glasses-selection button {
+  background-color: #f9f9f9; /* Light gray background */
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.glasses-selection button:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  background-color: #f0f0f0; /* Darker gray background on hover */
+}
+
+.glasses-selection img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Glasses name under the image */
+.glasses-name {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666; /* Lighter text color */
+}
