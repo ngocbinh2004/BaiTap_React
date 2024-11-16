@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$custom-color: aqua;
+/* Style CSS */
+.demo {
+  color: $custom-color;
+}

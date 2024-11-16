@@ -1,0 +1,119 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  padding: 20px;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 32px; /* Tăng kích thước tiêu đề */
+    color: #333;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .seating-layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 70%; /* Tăng chiều rộng cho khu vực ghế */
+
+      .row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px; /* Tăng khoảng cách giữa các hàng ghế */
+
+        .row-label {
+          font-weight: bold;
+          width: 50px; /* Tăng chiều rộng của nhãn hàng */
+          text-align: center;
+          font-size: 18px; /* Tăng kích thước chữ nhãn hàng */
+        }
+
+        .seats {
+          display: flex;
+          gap: 10px; /* Tăng khoảng cách giữa các ghế */
+        }
+      }
+    }
+
+    .summary {
+      width: 40%; /* Tăng chiều rộng bảng tóm tắt */
+      background: white;
+      padding: 20px; /* Tăng khoảng cách padding */
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      h2 {
+        margin-bottom: 15px;
+        font-size: 20px; /* Tăng kích thước chữ tiêu đề bảng */
+        color: #444;
+      }
+
+      table {
+        width: 100%;
+        margin-bottom: 15px;
+        border-collapse: collapse;
+
+        th,
+        td {
+          border: 1px solid #ddd;
+          padding: 10px; /* Tăng khoảng cách trong ô */
+          text-align: left;
+        }
+
+        th {
+          background-color: #f9f9f9;
+          font-size: 16px; /* Tăng kích thước chữ tiêu đề cột */
+        }
+
+        td {
+          font-size: 14px; /* Tăng kích thước chữ trong ô */
+        }
+      }
+
+      p {
+        font-size: 18px; /* Tăng kích thước tổng tiền */
+        font-weight: bold;
+        text-align: right;
+        color: #333;
+      }
+    }
+  }
+}
+
+.seat {
+  width: 60px; /* Tăng chiều rộng ghế */
+  height: 60px; /* Tăng chiều cao ghế */
+  border-radius: 8px; /* Tăng độ bo tròn của ghế */
+  font-size: 16px; /* Tăng kích thước chữ trong ghế */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &.booked {
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: not-allowed;
+  }
+
+  &.selected {
+    background-color: #27ae60;
+    color: #fff;
+  }
+
+  &.available {
+    background-color: #3498db;
+    color: #fff;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}
